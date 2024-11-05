@@ -1,8 +1,9 @@
 function firstWord(s) {
-  // your code here
+  const trimmedStr = s.trim();
+  const spaceIndex = trimmedStr.indexOf(' ');
+  return spaceIndex === -1 ? trimmedStr : trimmedStr.slice(0, spaceIndex);
 }
-
-// Do not change the code below
 
 const s = prompt("Enter String:");
 alert(firstWord(s));
+
